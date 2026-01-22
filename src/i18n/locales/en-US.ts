@@ -26,8 +26,9 @@ export default {
   // Hero Section
   hero: {
     title: 'AI-Driven Vertical Scenario Solutions',
-    subtitle: 'Solve Real Business Problems Deep Inside Customer Companies',
-    description: 'Provide AI-driven vertical scenario solutions and products, support FDE mode, dispatch complete teams to provide customers with consulting, R&D, deployment, operation and maintenance and other full series of services',
+    subtitle: 'Make Business Work, Make Decisions Smarter',
+    description: 'Deep into customer companies, through the FDE full-process service model, from consulting and R&D to deployment and operation, providing one-stop solutions to real business problems',
+    badge: 'Professional AI Solution Provider',
   },
   
   // Partners
