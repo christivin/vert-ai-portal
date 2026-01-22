@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import './FloatingTools.css';
 
 const FloatingTools: React.FC = () => {
-  const { t } = useTranslation();
+  useTranslation(); // 保留用于未来扩展
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {

@@ -85,7 +85,7 @@ const FDEModeSection: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <Timeline
-            items={fdeSteps.map((step, index) => ({
+            items={fdeSteps.map((step) => ({
               children: (
                 <div>
                   <h4>{step.title}</h4>

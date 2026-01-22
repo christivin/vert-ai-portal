@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Tabs, Card } from 'antd';
+import { Tabs } from 'antd';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import SectionTitle from '../common/SectionTitle';

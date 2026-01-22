@@ -2,8 +2,8 @@ import axios from 'axios';
 import type { ContactFormData, ContactFormResponse } from './mock';
 import { mockSubmitContactForm } from './mock';
 
-// 创建axios实例
-const apiClient = axios.create({
+// 创建axios实例（预留，未来真实API调用时使用）
+export const apiClient = axios.create({
   baseURL: '/api', // TODO: 配置真实API基础URL
   timeout: 10000,
   headers: {

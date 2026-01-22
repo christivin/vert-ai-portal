@@ -1,4 +1,3 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Layout } from 'antd';
 import Header from './components/Layout/Header';

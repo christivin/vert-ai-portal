@@ -20,7 +20,7 @@ export interface ContactFormResponse {
 
 // Mock联系表单提交
 export const mockSubmitContactForm = async (
-  data: ContactFormData
+  _data: ContactFormData
 ): Promise<ContactFormResponse> => {
   // 模拟网络延迟
   await new Promise((resolve) => setTimeout(resolve, 1000));
