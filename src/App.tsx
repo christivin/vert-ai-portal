@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { Layout } from 'antd';
 import Header from './components/Layout/Header';
 import Footer from './components/Layout/Footer';
@@ -28,6 +28,7 @@ function App() {
           <Route path={routes.resources} element={<ResourcesPage />} />
           <Route path={routes.about} element={<AboutPage />} />
           <Route path={routes.fde} element={<FDEPage />} />
+          <Route path="*" element={<Navigate to={routes.home} replace />} />
         </Routes>
       </Content>
       <Footer />
