@@ -14,7 +14,7 @@ const Root = () => {
 
   return (
     <ConfigProvider theme={currentTheme}>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <App />
       </BrowserRouter>
     </ConfigProvider>
