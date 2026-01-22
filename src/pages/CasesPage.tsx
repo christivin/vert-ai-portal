@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col, Card } from 'antd';
 import { useTranslation } from 'react-i18next';
 import SectionTitle from '../components/common/SectionTitle';
+import { getAssetPath } from '../utils/path';
 
 const CasesPage: React.FC = () => {
   const { t } = useTranslation();
@@ -10,7 +11,7 @@ const CasesPage: React.FC = () => {
     {
       id: 1,
       company: '联合利华',
-      logo: '/images/cases/联合利华.png',
+      logo: getAssetPath('/images/cases/联合利华.png'),
       description: 'VERT.AI提供的AI解决方案帮助我们实现了业务数字化转型，大幅提升了运营效率。',
       person: '杨纪宝',
       position: '北亚区客户运作团队副总裁',
@@ -18,7 +19,7 @@ const CasesPage: React.FC = () => {
     {
       id: 2,
       company: '元气森林',
-      logo: '/images/cases/元气森林.png',
+      logo: getAssetPath('/images/cases/元气森林.png'),
       description: '通过VERT.AI的FDE模式，我们从咨询到部署都得到了专业的支持，项目进展非常顺利。',
       person: '章肖洋',
       position: '首席运营官',
@@ -26,7 +27,7 @@ const CasesPage: React.FC = () => {
     {
       id: 3,
       company: '斗鱼直播',
-      logo: '/images/cases/斗鱼.png',
+      logo: getAssetPath('/images/cases/斗鱼.png'),
       description: 'VERT.AI的垂直场景解决方案深入理解我们的业务，真正解决了实际问题。',
       person: '熊星',
       position: 'PMO负责人',
@@ -54,7 +55,7 @@ const CasesPage: React.FC = () => {
                 </div>
                 <div className="case-quote">
                   <img 
-                    src="/images/cases/quotation-prefix.png" 
+                    src={getAssetPath('/images/cases/quotation-prefix.png')} 
                     alt=""
                     className="quote-prefix"
                     style={{ width: 24, height: 24 }}
@@ -66,7 +67,7 @@ const CasesPage: React.FC = () => {
                     {caseItem.description}
                   </p>
                   <img 
-                    src="/images/cases/quotation-suffix.png" 
+                    src={getAssetPath('/images/cases/quotation-suffix.png')} 
                     alt=""
                     className="quote-suffix"
                     style={{ width: 24, height: 24, marginLeft: 'auto' }}

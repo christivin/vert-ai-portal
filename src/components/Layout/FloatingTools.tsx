@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FloatButton, Popover } from 'antd';
 import { CustomerServiceOutlined, PhoneOutlined, WechatOutlined, VideoCameraOutlined, UpOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
+import { getAssetPath } from '../../utils/path';
 import './FloatingTools.css';
 
 const FloatingTools: React.FC = () => {
@@ -25,7 +26,7 @@ const FloatingTools: React.FC = () => {
   const wechatContent = (
     <div className="wechat-popover">
       <img 
-        src="/images/wechat-code.png" 
+        src={getAssetPath('/images/sidebar/wechat_code.png')} 
         alt="微信二维码" 
         style={{ width: 150, height: 150 }}
         onError={(e) => {

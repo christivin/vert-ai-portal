@@ -3,6 +3,7 @@ import { Layout, Row, Col, Space } from 'antd';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { routes } from '../../config/routes';
+import { getAssetPath } from '../../utils/path';
 import './Footer.css';
 
 const { Footer: AntFooter } = Layout;
@@ -24,7 +25,7 @@ const Footer: React.FC = () => {
                   <div className="footer-qrcodes">
                     <div className="footer-qrcode-item">
                       <img 
-                        src="/images/footer/微信公众号.jpg" 
+                        src={getAssetPath('/images/footer/微信公众号.jpg')} 
                         alt="微信公众号"
                         onError={(e) => {
                           e.currentTarget.style.display = 'none';
@@ -34,7 +35,7 @@ const Footer: React.FC = () => {
                     </div>
                     <div className="footer-qrcode-item">
                       <img 
-                        src="/images/footer/企微.png" 
+                        src={getAssetPath('/images/footer/企微.png')} 
                         alt="企业微信"
                         onError={(e) => {
                           e.currentTarget.style.display = 'none';

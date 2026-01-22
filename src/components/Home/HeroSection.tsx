@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { routes } from '../../config/routes';
+import { getAssetPath } from '../../utils/path';
 import './HeroSection.css';
 
 const { Title, Paragraph } = Typography;
@@ -14,7 +15,10 @@ const HeroSection: React.FC = () => {
 
   return (
     <section className="hero-section">
-      <div className="hero-background">
+      <div 
+        className="hero-background"
+        style={{ backgroundImage: `url(${getAssetPath('/images/hero-bg.jpg')})` }}
+      >
         <div className="hero-overlay" />
       </div>
       <motion.div 

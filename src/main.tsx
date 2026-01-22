@@ -12,9 +12,12 @@ const Root = () => {
   const { themeMode } = useTheme();
   const currentTheme = themeMode === 'dark' ? darkTheme : lightTheme;
 
+  // GitHub Pages部署时使用base路径
+  const basename = import.meta.env.PROD ? '/vert-ai-portal' : '/';
+  
   return (
     <ConfigProvider theme={currentTheme}>
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <BrowserRouter basename={basename}>
         <App />
       </BrowserRouter>
     </ConfigProvider>

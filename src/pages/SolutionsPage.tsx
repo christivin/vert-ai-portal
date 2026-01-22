@@ -2,18 +2,19 @@ import React from 'react';
 import { Row, Col, Card, Button, Space } from 'antd';
 import { useTranslation } from 'react-i18next';
 import SectionTitle from '../components/common/SectionTitle';
+import { getAssetPath } from '../utils/path';
 
 const SolutionsPage: React.FC = () => {
   const { t } = useTranslation();
 
   const industries = [
-    { id: 1, name: t('solutions.industry.consumer'), icon: '/images/icons/消费品.png' },
-    { id: 2, name: t('solutions.industry.retail'), icon: '/images/icons/泛零售.png' },
-    { id: 3, name: t('solutions.industry.finance'), icon: '/images/icons/银行.png' },
-    { id: 4, name: t('solutions.industry.internet'), icon: '/images/icons/互联网.png' },
-    { id: 5, name: t('solutions.industry.stateOwned'), icon: '/images/icons/央国企.png' },
-    { id: 6, name: t('solutions.industry.manufacturing'), icon: '/images/icons/制造业.png' },
-    { id: 7, name: t('solutions.industry.medical'), icon: '/images/icons/医疗医药.png' },
+    { id: 1, name: t('solutions.industry.consumer'), icon: getAssetPath('/images/icons/消费品.png') },
+    { id: 2, name: t('solutions.industry.retail'), icon: getAssetPath('/images/icons/泛零售.png') },
+    { id: 3, name: t('solutions.industry.finance'), icon: getAssetPath('/images/icons/银行.png') },
+    { id: 4, name: t('solutions.industry.internet'), icon: getAssetPath('/images/icons/互联网.png') },
+    { id: 5, name: t('solutions.industry.stateOwned'), icon: getAssetPath('/images/icons/央国企.png') },
+    { id: 6, name: t('solutions.industry.manufacturing'), icon: getAssetPath('/images/icons/制造业.png') },
+    { id: 7, name: t('solutions.industry.medical'), icon: getAssetPath('/images/icons/医疗医药.png') },
   ];
 
   const values = [

@@ -3,6 +3,7 @@ import { Row, Col, Card, Timeline } from 'antd';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import SectionTitle from '../common/SectionTitle';
+import { getAssetPath } from '../../utils/path';
 import './FDEModeSection.css';
 
 const FDEModeSection: React.FC = () => {
@@ -11,25 +12,25 @@ const FDEModeSection: React.FC = () => {
   const fdeSteps = [
     {
       key: 'consult',
-      icon: '/images/icons/fde-consult.png',
+      icon: getAssetPath('/images/icons/fde-consult.png'),
       title: t('fde.consult.title'),
       description: t('fde.consult.description'),
     },
     {
       key: 'develop',
-      icon: '/images/icons/fde-develop.png',
+      icon: getAssetPath('/images/icons/fde-develop.png'),
       title: t('fde.develop.title'),
       description: t('fde.develop.description'),
     },
     {
       key: 'deploy',
-      icon: '/images/icons/fde-deploy.png',
+      icon: getAssetPath('/images/icons/fde-deploy.png'),
       title: t('fde.deploy.title'),
       description: t('fde.deploy.description'),
     },
     {
       key: 'operate',
-      icon: '/images/icons/fde-operate.png',
+      icon: getAssetPath('/images/icons/fde-operate.png'),
       title: t('fde.operate.title'),
       description: t('fde.operate.description'),
     },

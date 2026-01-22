@@ -3,6 +3,7 @@ import { Row, Col, Card } from 'antd';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import SectionTitle from '../common/SectionTitle';
+import { getAssetPath } from '../../utils/path';
 import './ProductsSection.css';
 
 const ProductsSection: React.FC = () => {
@@ -13,19 +14,19 @@ const ProductsSection: React.FC = () => {
       id: 1,
       title: t('products.product1.title'),
       description: t('products.product1.description'),
-      icon: '/images/icons/icon1.png',
+      icon: getAssetPath('/images/icons/icon1.png'),
     },
     {
       id: 2,
       title: t('products.product2.title'),
       description: t('products.product2.description'),
-      icon: '/images/icons/icon2.png',
+      icon: getAssetPath('/images/icons/icon2.png'),
     },
     {
       id: 3,
       title: t('products.product3.title'),
       description: t('products.product3.description'),
-      icon: '/images/icons/icon3.png',
+      icon: getAssetPath('/images/icons/icon3.png'),
     },
   ];
 

@@ -3,6 +3,7 @@ import { Tabs } from 'antd';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import SectionTitle from '../common/SectionTitle';
+import { getAssetPath } from '../../utils/path';
 import './AdvantagesSection.css';
 
 const AdvantagesSection: React.FC = () => {
@@ -20,7 +21,7 @@ const AdvantagesSection: React.FC = () => {
         '提供精准的AI解决方案',
         '解决实际业务问题',
       ],
-      image: '/images/hero/info1.jpg',
+      image: getAssetPath('/images/hero/info1.jpg'),
     },
     {
       key: 'ai',
@@ -32,7 +33,7 @@ const AdvantagesSection: React.FC = () => {
         '驱动业务创新和增长',
         '持续优化和迭代',
       ],
-      image: '/images/hero/info1.jpg',
+      image: getAssetPath('/images/hero/info1.jpg'),
     },
     {
       key: 'fde',
@@ -44,7 +45,7 @@ const AdvantagesSection: React.FC = () => {
         '一站式服务',
         '专业团队支持',
       ],
-      image: '/images/hero/info1.jpg',
+      image: getAssetPath('/images/hero/info1.jpg'),
     },
   ];
 
