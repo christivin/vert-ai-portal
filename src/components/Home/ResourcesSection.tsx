@@ -3,6 +3,7 @@ import { Row, Col, Card, Button, Space } from 'antd';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import SectionTitle from '../common/SectionTitle';
+import { getAssetPath } from '../../utils/path';
 import './ResourcesSection.css';
 
 const ResourcesSection: React.FC = () => {
@@ -13,19 +14,19 @@ const ResourcesSection: React.FC = () => {
       id: 1,
       title: 'AI应用实践合集',
       description: '帮助企业将AI转化为行动力，加快构建AI驱动的业务能力，实现业务增长。',
-      cover: '/images/resources/learn1.png',
+      cover: getAssetPath('/images/resources/learn1.png'),
     },
     {
       id: 2,
       title: '垂直场景AI指南',
       description: '多个行业AI应用最佳实践，让企业不走弯路，找到适合自己的AI升级之路。',
-      cover: '/images/resources/learn2.png',
+      cover: getAssetPath('/images/resources/learn2.png'),
     },
     {
       id: 3,
       title: 'FDE模式白皮书',
       description: '期望为企业决策者和科技人员在AI应用和业务智能化建设中提供支持和决策依据。',
-      cover: '/images/resources/learn3.png',
+      cover: getAssetPath('/images/resources/learn3.png'),
     },
   ];
 
