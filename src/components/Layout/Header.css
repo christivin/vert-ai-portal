@@ -1,0 +1,135 @@
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  height: 64px;
+  line-height: 64px;
+}
+
+.dark .app-header {
+  background: #141414;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 100%;
+}
+
+.header-logo {
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1890ff;
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  background: linear-gradient(135deg, #1890ff 0%, #722ed1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.header-menu {
+  flex: 1;
+  border-bottom: none;
+  min-width: 0;
+}
+
+.header-menu .ant-menu-item,
+.header-menu .ant-menu-submenu {
+  margin: 0 8px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.header-phone {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+}
+
+.dark .header-phone {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.mobile-menu-btn {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* 平板端适配 (768px - 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .header-content {
+    padding: 0 20px;
+  }
+
+  .header-menu .ant-menu-item,
+  .header-menu .ant-menu-submenu {
+    margin: 0 4px;
+    padding: 0 8px;
+  }
+
+  .header-logo {
+    font-size: 22px;
+  }
+}
+
+/* 移动端适配 (≤768px) */
+@media (max-width: 768px) {
+  .app-header {
+    height: 56px;
+    line-height: 56px;
+  }
+
+  .header-content {
+    padding: 0 16px;
+  }
+
+  .header-logo {
+    font-size: 20px;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header-actions {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .dark .mobile-menu {
+    background: #141414;
+  }
+}
